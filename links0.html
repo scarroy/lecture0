@@ -1,77 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My Webpage!</title>
-    <style media="screen">
-      h1, h2 {
-        color: red;
-      }
-      ol > li{
-        color: green;
-      }
-      input[type=text] {
-        background-color: cyan;
-      }
-      button:hover {
-        background-color: orange;
-      }
-      button {
-        width: 200px;
-        height: 50px;
-        font-size: 24px;
-        background-color: green;
-      }
-      p::selection {
-        color: red;
-        background-color: orange;
-      }
-    </style>
-  </head>
-  <body>
 
-    <ol>
-      <li>item 1</li>
-      <li>item 2</li>
-      <ul>
-        <li>sublist item 1</li>
-        <li>sublist item 2</li>
-      </ul>
-    </ol>
+<head>
+  <title>My Webpage!</title>
+  <style media="screen">
+    h1,
+    h2 {
+      color: red;
+    }
+
+    ol>li {
+      color: green;
+    }
+
+    input[type=text] {
+      background-color: cyan;
+    }
+
+    button:hover {
+      background-color: orange;
+    }
+
+    button {
+      width: 200px;
+      height: 50px;
+      font-size: 24px;
+      background-color: green;
+    }
+
+    p::selection {
+      color: red;
+      background-color: orange;
+    }
+
+    @media print {
+      .screen-only {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <ol>
+    <li>item 1</li>
+    <li>item 2</li>
     <ul>
-      <li>one</li>
-      <li>two</li>
+      <li>sublist item 1</li>
+      <li>sublist item 2</li>
     </ul>
-      <a href="hello.html">Click here!</a>
+  </ol>
+  <ul>
+    <li>one</li>
+    <li>two</li>
+  </ul>
+  <a href="hello.html">Click here!</a>
 
-      <a href="#section1">section 1</a>
+  <a href="#section1">section 1</a>
 
-      <h2 id="section1">Section 1</h2>
+  <h2 id="section1">Section 1</h2>
 
-      <form>
-        <div>
-            <input type="text" name="name" placeholder="Name">
-            <input type="password" name="password" placeholder="Password">
-        </div>
-        <div>
-            Favorite color?
-            <input type="radio" name="color" value="red"> Red
-            <input type="radio" name="color" value="green"> Green
-            <input type="radio" name="color" value="blue"> Blue
-            <input type="radio" name="color" value="other"> Other
-        </div>
-        <div>
-            <input name="country" list="countries" placeholder="Country">
-            <datalist id="countries">
-              <option value="Afganastan">
-              <option value="Algeria">
-              <option value="America">
-            </datalist>
-        </div>
-      </form>
+  <form>
+    <div>
+      <input type="text" name="name" placeholder="Name">
+      <input type="password" name="password" placeholder="Password">
+    </div>
+    <div>
+      Favorite color?
+      <input type="radio" name="color" value="red"> Red
+      <input type="radio" name="color" value="green"> Green
+      <input type="radio" name="color" value="blue"> Blue
+      <input type="radio" name="color" value="other"> Other
+    </div>
+    <div>
+      <input name="country" list="countries" placeholder="Country">
+      <datalist id="countries">
+        <option value="Afganastan">
+        <option value="Algeria">
+        <option value="America">
+      </datalist>
+    </div>
+  </form>
 
-      <button type="button" name="button">Click me!</button>
-      <p>
-        just some text to select.
-      </p>
-  </body>
+  <button type="button" name="button">Click me!</button>
+  <p>just some text to select.</p>
+  <p>another paragraph</p>
+  <p class="screen-only">just appear on computers</p>
+
+</body>
+
 </html>
