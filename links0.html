@@ -2,8 +2,45 @@
 <html lang="en">
   <head>
     <title>My Webpage!</title>
+    <style media="screen">
+      h1, h2 {
+        color: red;
+      }
+      ol > li{
+        color: green;
+      }
+      input[type=text] {
+        background-color: cyan;
+      }
+      button:hover {
+        background-color: orange;
+      }
+      button {
+        width: 200px;
+        height: 50px;
+        font-size: 24px;
+        background-color: green;
+      }
+      p::selection {
+        color: red;
+        background-color: orange;
+      }
+    </style>
   </head>
   <body>
+
+    <ol>
+      <li>item 1</li>
+      <li>item 2</li>
+      <ul>
+        <li>sublist item 1</li>
+        <li>sublist item 2</li>
+      </ul>
+    </ol>
+    <ul>
+      <li>one</li>
+      <li>two</li>
+    </ul>
       <a href="hello.html">Click here!</a>
 
       <a href="#section1">section 1</a>
@@ -31,5 +68,10 @@
             </datalist>
         </div>
       </form>
+
+      <button type="button" name="button">Click me!</button>
+      <p>
+        just some text to select.
+      </p>
   </body>
 </html>
