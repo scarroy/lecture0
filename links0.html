@@ -38,11 +38,23 @@
         display: none;
       }
     }
+    @media (min-width: 500px) {
+      body {
+        background-color: red;
+      }
+    @media (max-width: 499px) {
+      body {
+        background-color: blue;
+      }
+    }
+
+    }
   </style>
 </head>
 
 <body>
 
+ <h1>Welcome to this webpage!</h1>
   <ol>
     <li>item 1</li>
     <li>item 2</li>
@@ -86,7 +98,7 @@
   <button type="button" name="button">Click me!</button>
   <p>just some text to select.</p>
   <p>another paragraph</p>
-  <p class="screen-only">just appear on computers</p>
+  <p class="screen-only">this won't print due to its class</p>
 
 </body>
 
