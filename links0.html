@@ -39,22 +39,22 @@
       }
     }
     @media (min-width: 500px) {
-      body {
-        background-color: red;
-      }
-    @media (max-width: 499px) {
-      body {
-        background-color: blue;
+      h1::before {
+        content: "welcome to my 500px webpage!";
       }
     }
-
+    @media (max-width: 499px) {
+      h1::before {
+          content: "Welcome 499px webpage!"
+        }
+      }
     }
   </style>
 </head>
 
 <body>
 
- <h1>Welcome to this webpage!</h1>
+ <h1></h1>
   <ol>
     <li>item 1</li>
     <li>item 2</li>
